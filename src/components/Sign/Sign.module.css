@@ -1,13 +1,10 @@
 .cnstrcsgn {
   color: rgb(0, 0, 0);
-  position: absolute;
-  top: 0;
-  justify-self: center;
+  position: relative;
+  top: -15.75vw;
   width: 25vw;
   height: 20vw;
-  /* transform-origin: center top;
-  animation: infinite cubic-bezier(0.535, -0.030, 0.445, 1.035) signSwing alternate 3s;
-  animation-fill-mode: both; */
+  transform-origin: center top;
 }
 
 .wire {
@@ -19,7 +16,6 @@
   border-top: 10px solid black;
   border-left: 10px solid black;
   transform: rotate(45deg);
-  z-index: 2;
 }
 
 .sign {
@@ -36,7 +32,6 @@
   background: #AD3826;
   text-align: center;
   box-shadow: 0 6px 5px rgba(black, 0.25);
-  z-index: 3;
 }
 
 .smalltxt {
@@ -50,8 +45,30 @@
   font-size: 4vw;
 }
 
+.business {
+  margin: 0;
+  padding: 2vw 7vw;
+}
+
+.email {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.cnstrcsgn:hover {
+  animation: infinite cubic-bezier(0.535, -0.030, 0.445, 1.035) signSwing alternate 3s;
+  animation-fill-mode: both;
+}
+
 @keyframes signSwing {
   0% {
+    transform: rotate3d(1, 0, 1, 0deg);
+  }
+  50% {
     transform: rotate3d(1, 0, 1, -6deg);
   }
   100% {
