@@ -14,6 +14,7 @@
   width: 100vw;
 }
 
+
 h1 {
   grid-area: gamut;
   align-self: center;
@@ -32,7 +33,7 @@ h1 {
   padding: 2vw;
   text-align: justify;
   position: absolute;
-  bottom: 0;
+  bottom: 5vw;
 }
 
 .bodyTXT {

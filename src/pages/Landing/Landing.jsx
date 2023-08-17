@@ -1,9 +1,12 @@
+import Sign from '../../components/Sign/Sign'
+
 // css
 import styles from './Landing.module.css'
 
 const Landing = () => {
   return (
     <main className={styles.container}>
+      <Sign className={styles.cnstrcsgn} />
       <h1>GAMUT</h1>
       <div className={styles.body}>
         

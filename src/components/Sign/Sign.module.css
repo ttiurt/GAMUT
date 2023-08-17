@@ -1,0 +1,60 @@
+.cnstrcsgn {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  justify-self: center;
+  width: 25vw;
+  height: 20vw;
+  /* transform-origin: center top;
+  animation: infinite cubic-bezier(0.535, -0.030, 0.445, 1.035) signSwing alternate 3s;
+  animation-fill-mode: both; */
+}
+
+.wire {
+  position: absolute;
+  top: 5vw;
+  justify-self: center;
+  width: 25vw;
+  height: 25vw;
+  border-top: 10px solid black;
+  border-left: 10px solid black;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  top: 15vw;
+  right: 8vw;
+  justify-self: center;
+  height: 25vw;
+  width: 41vw;
+  background: #AD3826;
+  text-align: center;
+  box-shadow: 0 6px 5px rgba(black, 0.25);
+  z-index: 3;
+}
+
+.smalltxt {
+  margin: 0;
+  font-size: 1vw;
+  padding: 2vw 3vw;
+}
+
+.bigtxt {
+  margin: 0;
+  font-size: 4vw;
+}
+
+@keyframes signSwing {
+  0% {
+    transform: rotate3d(1, 0, 1, -6deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 1, 6deg);
+  }
+}
