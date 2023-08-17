@@ -5,8 +5,13 @@
 }
 
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: ESBuild;
+  src: url(/public/ESBuild-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Moderat Serif Trial-Light";
+  src: url(/public/Moderat-Serif-Trial-Extralight.otf);
 }
 
 body {
