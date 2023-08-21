@@ -4,18 +4,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-inline: auto;
   height: 100vh;
   width: 100%;
 }
 
 
-h1 {
+.GMTimg {
+  padding-top: 2.5vw;
   justify-self: center;
+  width: 90vw;
+  height: auto;
   position: absolute;
-  top: -5vw;
-  font-family: ESBuild;
-  font-size: 28vw;
+  top: 0;
   margin: 0 auto;
 }
 
@@ -23,17 +25,18 @@ h1 {
   display: flex;
   align-content: center;
   flex-direction: row;
-  padding: 2vw;
+  padding: 0 4vw;
   text-align: justify;
   position: absolute;
   bottom: 5vw;
+  line-height: 1.5;
 }
 
 .bodyTXT {
   font-family: "acumin-pro", sans-serif;
   font-weight: 300;
   font-style: extra-light;
-  font-size: 2.75vw;
+  font-size: 3vw;
   margin: 0;
 }
 
@@ -44,15 +47,29 @@ h1 {
   font-size: 1.2vw;
   place-self: flex-start;
   position: relative;
-  bottom: .3vw;
+  bottom: .5vw;
 }
 
 .keyWords {
   font-family: "Moderat Serif Trial-Light", Helvetica;
-  font-size: 2.75vw;
+  font-size: 3vw;
 }
 
-.eml {
+
+.thesign {
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  margin-inline: auto;
+  position: fixed;
+  top: -7.5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+
+/* .eml {
   font-family: "acumin-pro", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -61,497 +78,6 @@ h1 {
   position: relative;
   bottom: .3vw;
   left: 25vw;
-}
-
-.thesign {
-  justify-self: center;
-  z-index: 100;
-}
-
-
-/* !!XXS MEDIA QUERY!! */
-
-/* @media screen and (min-width: 375px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  h1 {
-    align-self: center;
-    position: absolute;
-    top: 0;
-    font-family: ESBuild;
-    font-size: 6rem;
-    margin: 0;
-  }
-  
-  .body {
-    display: flex;
-    align-content: stretch;
-    flex-direction: row;
-    padding: 1rem;
-    align-self: center;
-    outline: 1px solid #ffffff;
-    text-align: justify;
-    position: relative;
-    top: 7rem;
-  }
-  
-  .bodyTXT {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: extra-light;
-    font-size: 1.25rem;
-    margin: 0;
-  }
-  
-  .abt {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: .75rem;
-    place-self: flex-start;
-    position: relative;
-    bottom: .15rem;
-  }
-  
-  .keyWords {
-    font-family: "Moderat Serif Trial-Light", Helvetica;
-    font-size: 1.25rem;
-  }
-  
-  .eml {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: .75rem;
-    place-self: flex-end;
-    position: relative;
-    bottom: .15rem;
-  }
 } */
 
 
-
-
-
-/* !!XS MEDIA QUERY!! */
-
-/* @media screen and (min-width: 475px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  h1 {
-    align-self: center;
-    position: absolute;
-    top: 0;
-    font-family: ESBuild;
-    font-size: 7.5rem;
-    margin: 0;
-  }
-  
-  .body {
-    display: flex;
-    align-content: stretch;
-    flex-direction: row;
-    padding: 1rem;
-    align-self: center;
-    outline: 1px solid #ffffff;
-    text-align: justify;
-    position: relative;
-    top: 7rem;
-  }
-  
-  .bodyTXT {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: extra-light;
-    font-size: 1.75rem;
-    margin: 0;
-  }
-  
-  .abt {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1rem;
-    place-self: flex-start;
-    position: relative;
-    bottom: .2rem;
-  }
-  
-  .keyWords {
-    font-family: "Moderat Serif Trial-Light", Helvetica;
-    font-size: 1.75rem;
-  }
-  
-  .eml {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: .9rem;
-    place-self: flex-end;
-    position: relative;
-    bottom: .2rem;
-  }
-} */
-
-
-/* !!SMALL MEDIA QUERY!! */
-
-/* @media screen and (min-width: 640px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  h1 {
-    align-self: center;
-    position: absolute;
-    top: 0;
-    font-family: ESBuild;
-    font-size: 10rem;
-    margin: 0;
-  }
-  
-  .body {
-    display: flex;
-    align-content: stretch;
-    flex-direction: row;
-    padding: 1rem;
-    align-self: center;
-    outline: 1px solid #ffffff;
-    text-align: justify;
-    position: relative;
-    top: 10rem;
-  }
-  
-  .bodyTXT {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: extra-light;
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  .abt {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1rem;
-    place-self: flex-start;
-    position: relative;
-    bottom: .25rem;
-  }
-  
-  .keyWords {
-    font-family: "Moderat Serif Trial-Light", Helvetica;
-    font-size: 2rem;
-  }
-  
-  .eml {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1rem;
-    place-self: flex-end;
-    position: relative;
-    bottom: .25rem;
-  }
-} */
-
-
-
-
-/* !!MEDIUM MEDIA QUERY!! */
-
-/* @media screen and (min-width: 768px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  h1 {
-    align-self: center;
-    position: absolute;
-    top: 0;
-    font-family: ESBuild;
-    font-size: 12rem;
-    margin: 0;
-  }
-  
-  .body {
-    display: flex;
-    align-content: stretch;
-    flex-direction: row;
-    padding: 1.25rem;
-    align-self: center;
-    outline: 1px solid #ffffff;
-    text-align: justify;
-    position: relative;
-    top: 10rem;
-  }
-  
-  .bodyTXT {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: extra-light;
-    font-size: 2.35rem;
-    margin: 0;
-  }
-  
-  .abt {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.25rem;
-    place-self: flex-start;
-    position: relative;
-    bottom: .3rem;
-  }
-  
-  .keyWords {
-    font-family: "Moderat Serif Trial-Light", Helvetica;
-    font-size: 2.35rem;
-  }
-  
-  .eml {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.25rem;
-    place-self: flex-end;
-    position: relative;
-    bottom: .3rem;
-  }
-} */
-
-
-
-
-
-/* !!LARGE MEDIA QUERY!! */
-
-/* @media screen and (min-width: 1024px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  h1 {
-    align-self: center;
-    position: absolute;
-    top: 0;
-    font-family: ESBuild;
-    font-size: 15rem;
-    margin: 0;
-  }
-  
-  .body {
-    display: flex;
-    align-content: stretch;
-    flex-direction: row;
-    padding: 1.25rem;
-    align-self: center;
-    outline: 1px solid #ffffff;
-    text-align: justify;
-    position: relative;
-    top: 10rem;
-  }
-  
-  .bodyTXT {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: extra-light;
-    font-size: 2.5rem;
-    margin: 0;
-  }
-  
-  .abt {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.5rem;
-    place-self: flex-start;
-    position: relative;
-    bottom: .3rem;
-  }
-  
-  .keyWords {
-    font-family: "Moderat Serif Trial-Light", Helvetica;
-    font-size: 2.5rem;
-  }
-  
-  .eml {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.5rem;
-    place-self: flex-end;
-    position: relative;
-    bottom: .3rem;
-  }
-} */
-
-
-
-
-
-/* !!XLARGE MEDIA QUERY!! */
-
-/* @media screen and (min-width: 1280px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  h1 {
-    align-self: center;
-    position: absolute;
-    top: 0;
-    font-family: ESBuild;
-    font-size: 22rem;
-    margin: 0;
-  }
-  
-  .body {
-    display: flex;
-    align-content: stretch;
-    flex-direction: row;
-    padding: 1.25rem;
-    align-self: center;
-    outline: 1px solid #ffffff;
-    text-align: justify;
-    position: relative;
-    top: 10rem;
-  }
-  
-  .bodyTXT {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: extra-light;
-    font-size: 3.25rem;
-    margin: 0;
-  }
-  
-  .abt {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 2rem;
-    place-self: flex-start;
-    position: relative;
-    bottom: .3rem;
-  }
-  
-  .keyWords {
-    font-family: "Moderat Serif Trial-Light", Helvetica;
-    font-size: 3.25rem;
-  }
-  
-  .eml {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 2rem;
-    place-self: flex-end;
-    position: relative;
-    bottom: .3rem;
-  }
-} */
-
-
-
-
-
-/* !!XXLARGE MEDIA QUERY!! */
-
-/* @media screen and (min-width: 1536px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  h1 {
-    align-self: center;
-    position: absolute;
-    top: 0;
-    font-family: ESBuild;
-    font-size: 22rem;
-    margin: 0;
-  }
-  
-  .body {
-    display: flex;
-    align-content: stretch;
-    flex-direction: row;
-    padding: 1.25rem;
-    align-self: center;
-    outline: 1px solid #ffffff;
-    text-align: justify;
-  }
-  
-  .bodyTXT {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: extra-light;
-    font-size: 3.5rem;
-    margin: 0;
-  }
-  
-  .abt {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 2rem;
-    place-self: flex-start;
-    position: relative;
-    bottom: .3rem;
-  }
-  
-  .keyWords {
-    font-family: "Moderat Serif Trial-Light", Helvetica;
-    font-size: 3.5rem;
-  }
-  
-  .eml {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 2rem;
-    place-self: flex-end;
-    position: relative;
-    bottom: .3rem;
-  }
-} */

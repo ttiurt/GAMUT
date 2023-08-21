@@ -1,32 +1,47 @@
 .cnstrcsgn {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 100%; 
+  grid-template-rows: .2fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "wire"
+    "sign";
   color: rgb(0, 0, 0);
-  position: relative;
-  top: -15.75vw;
-  width: 25vw;
-  height: 20vw;
   transform-origin: center top;
+  margin-inline: auto;
+  position: fixed;
+  top: 4em;
 }
 
 .wire {
-  position: absolute;
-  top: 5vw;
-  justify-self: center;
-  width: 25vw;
-  height: 25vw;
-  border-top: 10px solid black;
-  border-left: 10px solid black;
-  transform: rotate(45deg);
+  grid-area: wire;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.wireimg {
+  height: auto;
+  width: 50vw;
 }
 
 .sign {
+  grid-area: sign;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1em;
+  z-index: 2;
+}
+
+.sgnimg {
+  height: auto;
+  width: 75vw;
+}
+
+/* .sign {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  top: 15vw;
-  right: 8vw;
-  justify-self: center;
   height: 25vw;
   width: 41vw;
   background: #AD3826;
@@ -52,7 +67,7 @@
 
 .email {
   margin: 0;
-}
+} */
 
 a {
   text-decoration: none;
