@@ -14,7 +14,7 @@
 .GMTimg {
   padding-top: 2.5vw;
   justify-self: center;
-  width: 90vw;
+  width: 95vw;
   height: auto;
   position: absolute;
   top: 0;
@@ -36,7 +36,7 @@
   font-family: "acumin-pro", sans-serif;
   font-weight: 300;
   font-style: extra-light;
-  font-size: 3vw;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -44,7 +44,7 @@
   font-family: "acumin-pro", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   place-self: flex-start;
   position: relative;
   bottom: .5vw;
@@ -52,7 +52,7 @@
 
 .keyWords {
   font-family: "Moderat Serif Trial-Light", Helvetica;
-  font-size: 3vw;
+  font-size: 3rem;
 }
 
 
@@ -69,15 +69,14 @@
 
 
 
-/* .eml {
+.eml {
   font-family: "acumin-pro", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1.2vw;
-  place-self: flex-end;
+  font-size: 1.5rem;
   position: relative;
-  bottom: .3vw;
-  left: 25vw;
-} */
+  left: 5.4rem;
+  bottom: .5rem;
+}
 
 
