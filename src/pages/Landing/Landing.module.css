@@ -89,3 +89,84 @@ a {
   left: 50%;
   transform: translate(-50%, 0);
 }
+
+
+
+@media (max-width: 900px) {
+  .container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 100%; 
+    grid-template-rows: 20% 80%; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo"
+      "body";
+    margin-inline: auto;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  
+  .GMTimg {
+    grid-area: logo;
+    align-items: start;
+    padding-top: .75rem;
+    width: 95vw;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .body {
+    grid-area: body;
+    align-items: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0 0; 
+    grid-template-areas: 
+      "bodyTXT bodyTXT bodyTXT";
+    padding: 0 7.5vw;
+    text-justify: distribute-all-lines;
+    text-align-last: center;
+    bottom: 2.5rem;
+    line-height: 1.25;
+  }
+  
+  .bodyTXT {
+    grid-area: bodyTXT;
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 300;
+    font-style: extra-light;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .abt {
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    position: relative;
+    bottom: .25rem;
+  }
+  
+  .keyWords {
+    font-family: "Moderat Serif Trial-Light", Helvetica;
+    font-size: 1.8rem;
+  }
+  
+  .eml {
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    position: relative;
+    bottom: .35rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
